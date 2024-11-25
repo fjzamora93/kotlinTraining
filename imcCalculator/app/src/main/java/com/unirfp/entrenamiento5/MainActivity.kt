@@ -176,7 +176,6 @@ class MainActivity : AppCompatActivity() {
     //Funcion para modificar el texto de la edad
     private fun setAge() {
         this.tvAge.text = this.currentAge.toString()
-
     }
 
     //Funcion para modificar genero seleccionado

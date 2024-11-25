@@ -19,8 +19,13 @@ class ResultIMCActivity : AppCompatActivity() {
     private lateinit var tvDescription: TextView
     private lateinit var  btnReCalculateIMC: Button
 
+
+    // savedInstanceState:bundle es lo que permite recuperar datos si se gira la pantalla
+    // o si la actividad es destruida en un momento. Si es la primera vez que se crea, el valor es nulo.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Método para aprovechra la pantalla completa
         enableEdgeToEdge()
         setContentView(R.layout.activity_result_imcactivity)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
